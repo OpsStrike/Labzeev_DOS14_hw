@@ -1,0 +1,2 @@
+ */10 * * * * /home/tima/study/lesson5/datascript.sh >> /home/tima/study/lesson5/cronlogs.txt
+

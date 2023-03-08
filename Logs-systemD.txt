@@ -1,0 +1,24 @@
+сак 07 17:32:00 timadev bash[3975]: Ожидание ответа сервера ...ServerVM is online
+сак 07 17:32:05 timadev systemd[1]: my-first-unit.service: Deactivated successfully.
+сак 07 17:32:05 timadev systemd[1]: Started Ping my server VM.
+сак 07 17:32:06 timadev systemd[1]: my-first-unit.service: Scheduled restart job, restart counter is at 360.
+сак 07 17:32:06 timadev systemd[1]: Stopped Ping my server VM.
+сак 07 17:32:06 timadev systemd[1]: Starting Ping my server VM...
+сак 07 17:32:11 timadev bash[3981]: Ожидание ответа сервера ...ServerVM is online
+сак 07 17:32:16 timadev systemd[1]: my-first-unit.service: Deactivated successfully.
+сак 07 17:32:16 timadev systemd[1]: Started Ping my server VM.
+сак 07 17:32:16 timadev systemd[1]: my-first-unit.service: Scheduled restart job, restart counter is at 361.
+сак 07 17:32:16 timadev systemd[1]: Stopped Ping my server VM.
+сак 07 17:32:16 timadev systemd[1]: Starting Ping my server VM...
+сак 07 17:32:21 timadev bash[3985]: Ожидание ответа сервера ...ServerVM is online
+сак 07 17:32:26 timadev systemd[1]: my-first-unit.service: Deactivated successfully.
+сак 07 17:32:26 timadev systemd[1]: Started Ping my server VM.
+сак 07 17:32:26 timadev systemd[1]: my-first-unit.service: Scheduled restart job, restart counter is at 362.
+сак 07 17:32:26 timadev systemd[1]: Stopped Ping my server VM.
+сак 07 17:32:26 timadev systemd[1]: Starting Ping my server VM...
+сак 07 17:32:31 timadev bash[3993]: Ожидание ответа сервера ...ServerVM is online
+сак 07 17:32:36 timadev systemd[1]: my-first-unit.service: Deactivated successfully.
+сак 07 17:32:36 timadev systemd[1]: Started Ping my server VM.
+сак 07 17:32:36 timadev systemd[1]: my-first-unit.service: Scheduled restart job, restart counter is at 363.
+сак 07 17:32:36 timadev systemd[1]: Stopped Ping my server VM.
+сак 07 17:32:36 timadev systemd[1]: Starting Ping my server VM...
