@@ -1,0 +1,28 @@
+#!/bin/bash
+
+arg="Files with sh extension"
+echo "$arg":
+IFS=" " #присваиваем ips разделитель пробел, чтобы слова переносились на следующую строку.
+type1=$(find . -maxdepth 1 \( ! -regex '.*/\..*' \) -type f -name "*.sh"  | sed 's/^\.\///g' | sort)
+#-not -path '*/\.*'
+echo -e "$type1" | awk '{print"      ",$0}'
+#maxdepth 1 - (глубина поиска - поиск файла в дерриктории поиска без рекурсивного просмотра всех деррикторий).
+#\( ! -regex '.*/\..*' \) = -not -path '*/\.*'  - регулярное выраженеи убирает из поиска все скрытые файлы и дерриктории.
+#-type f поиск только файлов; -name "*.sh" - поиск файлов с именем:*-любые символы с суффиксом .sh.
+#sed 's/^\.\///g' - убирает из выдачи специальные символы (^).
+#sort - соритровка выдачи.
+#awk '{print"      ",$0}' - делаем отступы слева для выдачи переменно $type1.
+
+arg="Files with txt extension"
+echo "$arg":
+IFS=" "
+type1=$(find . -maxdepth 1 -type f -name "*.txt" -not -path '*/\.*' | sed 's/^\.\///g' | sort)
+
+echo -e "$type1" | awk '{print"      ",$0}'
+
+arg="Files with no extension"
+echo "$arg":
+IFS=" "
+type1=$(find .  -maxdepth 1 -type f -name "*.???" -not -path '*/\.*' | sed 's/^\.\///g' | cut -d'.' -f1 | uniq -u | sort)
+echo -e "$type1" | awk '{print"      ",$0}'
+
