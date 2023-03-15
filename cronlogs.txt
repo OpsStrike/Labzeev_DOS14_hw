@@ -1,8 +1,0 @@
-Processes of tima 85 pieces
-load average: 0,04
-free Ram: 5295 Mb
-Свободно памяти в / 107G
-Processes of tima 80 pieces
-load average: 0,13
-free Ram: 5098 Mb
-Свободно памяти в / 107G
