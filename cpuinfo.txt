@@ -1,0 +1,35 @@
+Архитектура:                     x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   48 bits physical, 48 bits virtual
+Порядок байт:                    Little Endian
+CPU(s):                          3
+On-line CPU(s) list:             0-2
+ID прроизводителя:               AuthenticAMD
+Имя модели:                      AMD Ryzen 5 2600X Six-Core Processor
+Семейство ЦПУ:                   23
+Модель:                          8
+Потоков на ядро:                 2
+Ядер на сокет:                   2
+Сокетов:                         1
+Степпинг:                        2
+BogoMIPS:                        7199.99
+Флаги:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves xsaveerptr virt_ssbd arat
+Разработчик гипервизора:         Microsoft
+Тип виртуализации:               полный
+L1d cache:                       64 KiB (2 instances)
+L1i cache:                       128 KiB (2 instances)
+L2 cache:                        1 MiB (2 instances)
+L3 cache:                        8 MiB (1 instance)
+NUMA node(s):                    1
+NUMA node0 CPU(s):               0-2
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Not affected
+Vulnerability Retbleed:          Mitigation; untrained return thunk; SMT vulnerable
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
