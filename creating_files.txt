@@ -1,0 +1,17 @@
+#Синхронизация файлов размером от 400кб
+rsync -azvh --min-size=400K /home/tima/study/lesson11/ /home/tima/study/lesson11/test/
+
+#Создание 500 файлов размером 1кб
+
+for i in {1..500}; do dd if=/dev/urandom of=/dev/stdout count=1 bs=1K | base64 > $i; done
+
+#Создание 100 файлов размером 1мб 
+
+for i in {1..100}; do dd if=/dev/urandom of=/dev/stdout count=1 bs=1Mb | base64 > $i; done
+
+#Создание 500 файлов размером 500 кб
+
+for i in {1..500}; do dd if=/dev/urandom of=/dev/stdout count=1 bs=500K | base64 > $i; done
+
+#Замена вхождений А|a в vim
+:%s/A\c/ /g, где % - обрабатывать весь файл, s - запускаем командную оболочку с командой для замены, \c - Поиск в учетом регистра, g - обрабатываем все вхождения.
