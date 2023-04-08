@@ -1,0 +1,43 @@
+Создание разделов на дисках:
+sudo fdisk (g - gpt разметка, n - new part, +5G)
+В fdisk (t) change part type to lvm (id30)
+
+Создаем группу томов 
+sudo vgcreate -v vg0 /dev/sdb1 /dev/sdc1
+Проверяем
+sudo vgs
+
+Создаем логический топ 
+sudo lvcreat --type raid0 -i 2 -l 50%vg -n rr vg0
+Проверяем
+sudo lvdisplay vg0
+
+Отображение типа LV
+sudo lvs -o name,segtype vg0/rr
+
+Создаем файловую систему 
+sudo mkfs.ext4 /dev/vg0/rr
+
+Монитроуем raid lv
+sudo mkdir -p /u01
+sudo mount /dev/vg0/rr /u01
+Проверяем df -h
+
+Проверяем работу raid:
+
+sudo lvs -a -o name,devices vg0
+ LV            Devices                      
+  rr            rr_rimage_0(0),rr_rimage_1(0)
+  [rr_rimage_0] /dev/sdb1(0)                 
+  [rr_rimage_1] /dev/sdc1(0) 
+  
+  *FILES*
+  
+  sudo find / -user tima -amin -1380
+
+  
+  
+  
+  
+  
+  
