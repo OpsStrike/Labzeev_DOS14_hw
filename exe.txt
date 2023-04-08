@@ -33,7 +33,7 @@ sudo lvs -a -o name,devices vg0
   
   *FILES*
   
-  sudo find / -user tima -amin -1380
+  sudo find / -user tima -amin -1380 -or -user root -amin -1380
 
   
   
